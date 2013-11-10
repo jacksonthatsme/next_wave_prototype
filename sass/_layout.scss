@@ -1,0 +1,30 @@
+.box{
+  @include box-sizing(border-box);
+  height: 100%;
+  display: block;
+}
+section{
+  @extend .box;
+  float: left;
+  width: 25%;
+  padding: 30px 4% 0;
+  &#title{
+    text-align: center;
+    background-color: $background-orange;
+  }
+  &#information{
+    background-color: $background-grey;
+    overflow: scroll;
+  }
+}
+#banner{
+  @extend .box;
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  background-color: aqua;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}

@@ -1,0 +1,90 @@
+h1{
+  font-family: $knewave;
+  font-size: 6.1em;
+  line-height: .8em;
+  text-align: center;
+  letter-spacing: -6px;
+  padding: 80px 0px 50px;
+}
+h3{
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+h4{
+}
+.direction{
+  font-size: 1em;
+  font-weight: 200;
+}
+.category{
+  font-weight: 700;
+  font-size: .7em;
+  text-transform: uppercase;
+}
+.byline{
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase; 
+}
+p{
+  font-size: 1em;
+  line-height: 1.4em;
+}
+.dates{
+  ul{
+    li.date{
+      text-align: center;
+      span.month{
+        font-size: .8em;
+      }
+      span.day{
+        font-size: 4em;
+        font-weight: 700;
+        line-height: 1em;
+        letter-spacing: -.08em;
+      }
+      span.ordinal{
+        font-weight: 700;
+        font-size: .9em;
+        text-transform: uppercase;
+        padding-left: .4em;
+      }
+    }
+  }
+}
+.details{
+  dl{
+    dt{
+      font-weight: 200;
+      font-style: 1em;
+      &:not(:first-child){
+        margin-top: 10px;
+      }
+    }
+    dd{
+      font-weight: 700;
+      font-size: 1em;
+    }
+  }
+}
+.add-info{
+  ul{
+    li{
+      font-weight: 200;
+    }
+  }
+}
+.notes{
+  ul{
+    li{
+      font-weight: 200;
+      &:before{
+        content: "+ ";
+        font-weight: 500;
+        color: $background-orange;
+        margin-left: -1em;
+      }
+    }
+  }
+}

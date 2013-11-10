@@ -1,0 +1,37 @@
+.direction{
+  a{
+    position: absolute;
+    bottom: 30px;
+  }
+}
+#information{
+  div{
+    padding-top: 30px;
+    background-image: url('images/marker.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-bottom: 50px;
+  }
+}
+.dates{
+  ul{
+    li.date{
+      height: 100px;
+      width: 100px;
+      @include box-sizing(border-box);
+      padding: 8px;
+      display: inline-block;
+      margin: 0px 13px 15px 0px;
+      background-color: white;
+      span.month{
+        display: block;
+      }
+    }
+  }
+}
+#banner{
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
