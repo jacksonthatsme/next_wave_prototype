@@ -51,10 +51,10 @@
             var deltaY = startY - touches[0].pageY;
 
             if (deltaX >= 50) {
-              $this.trigger("swipeLeft");
+              $this.trigger("swipeDown");
             }
             if (deltaX <= -50) {
-              $this.trigger("swipeRight");
+              $this.trigger("swipeUp");
             }
             if (deltaY >= 50) {
               $this.trigger("swipeDown");
