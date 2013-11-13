@@ -16,6 +16,9 @@ section{
     background-color: white;
     overflow: scroll;
   }
+  &#map{
+    background: aqua;
+  }
 }
 #banner{
   @extend .box;

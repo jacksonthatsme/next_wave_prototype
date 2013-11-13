@@ -122,8 +122,12 @@ section#information {
   background-color: white;
   overflow: scroll;
 }
+/* line 19, sass/_layout.scss */
+section#map {
+  background: aqua;
+}
 
-/* line 20, sass/_layout.scss */
+/* line 23, sass/_layout.scss */
 #banner {
   position: fixed;
   z-index: -1;
@@ -135,7 +139,7 @@ section#information {
   overflow: hidden;
 }
 
-/* line 31, sass/_layout.scss */
+/* line 34, sass/_layout.scss */
 #one-page-wrap {
   height: 100%;
 }

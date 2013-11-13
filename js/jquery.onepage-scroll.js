@@ -51,10 +51,10 @@
             var deltaY = startY - touches[0].pageY;
 
             if (deltaX >= 50) {
-              $this.trigger("swipeDown");
+              $this.trigger("swipeLeft");
             }
             if (deltaX <= -50) {
-              $this.trigger("swipeUp");
+              $this.trigger("swipeRight");
             }
             if (deltaY >= 50) {
               $this.trigger("swipeDown");
@@ -111,10 +111,12 @@
           $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
           $("body").addClass("viewing-page-"+next.data("index"))
           
-          if (history.replaceState && settings.updateURL == true) {
+          /*
+if (history.replaceState && settings.updateURL == true) {
             var href = window.location.href.substr(0,window.location.href.indexOf('#')) + "#" + (index + 1);
             history.pushState( {}, document.title, href );
           }
+*/
         }
         pos = (index * 25) * -1;
         el.transformPage(settings, pos);
@@ -138,10 +140,12 @@
           $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
           $("body").addClass("viewing-page-"+next.data("index"))
           
-          if (history.replaceState && settings.updateURL == true) {
+          /*
+if (history.replaceState && settings.updateURL == true) {
             var href = window.location.href.substr(0,window.location.href.indexOf('#')) + "#" + (index - 1);
             history.pushState( {}, document.title, href );
           }
+*/
         }
         pos = ((next.data("index") - 1) * 25) * -1;
         el.transformPage(settings, pos);
@@ -204,10 +208,12 @@
         if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='" + (init_index) + "']").addClass("active");
         $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
         $("body").addClass("viewing-page-"+next.data("index"))
-        if (history.replaceState && settings.updateURL == true) {
+        /*
+if (history.replaceState && settings.updateURL == true) {
           var href = window.location.href.substr(0,window.location.href.indexOf('#')) + "#" + (init_index);
           history.pushState( {}, document.title, href );
         }
+*/
       }
       pos = ((init_index - 1) * 100) * -1;
       el.transformPage(settings, pos);
