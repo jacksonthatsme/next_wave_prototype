@@ -89,6 +89,7 @@ body {
   font-size: 16px;
   color: #323232;
   width: calc(100% * 2);
+  background-color: #fcbd92;
 }
 
 /* line 1, sass/_layout.scss */
@@ -109,15 +110,14 @@ section {
 /* line 11, sass/_layout.scss */
 section#title {
   text-align: center;
-  background-color: #fcbd92;
 }
-/* line 15, sass/_layout.scss */
+/* line 14, sass/_layout.scss */
 section#information {
   background-color: #ededed;
   overflow: scroll;
 }
 
-/* line 20, sass/_layout.scss */
+/* line 19, sass/_layout.scss */
 #banner {
   position: fixed;
   z-index: -1;
@@ -129,7 +129,7 @@ section#information {
   overflow: hidden;
 }
 
-/* line 31, sass/_layout.scss */
+/* line 30, sass/_layout.scss */
 #one-page-wrap {
   height: 100%;
 }
@@ -264,13 +264,20 @@ p {
   display: block;
 }
 
-/* line 33, sass/_module.scss */
+/* line 32, sass/_module.scss */
+#banner {
+  background-color: black;
+}
+/* line 34, sass/_module.scss */
 #banner img {
   height: 100%;
 }
 
-/* line 37, sass/_module.scss */
-h1 {
-  background-color: aqua;
-  -webkit-text-fill-color: transparent;
+/* line 3, sass/_state.scss */
+.viewing-page-2 #banner img, .viewing-page-3 #banner img, .viewing-page-4 #banner img {
+  opacity: .2;
+}
+/* line 7, sass/_state.scss */
+.viewing-page-2 #title, .viewing-page-3 #title, .viewing-page-4 #title {
+  color: #fcbd92;
 }
