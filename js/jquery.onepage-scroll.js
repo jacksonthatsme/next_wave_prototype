@@ -57,10 +57,10 @@
               $this.trigger("swipeRight");
             }
             if (deltaY >= 50) {
-              $this.trigger("swipeUp");
+              $this.trigger("swipeDown");
             }
             if (deltaY <= -50) {
-              $this.trigger("swipeDown");
+              $this.trigger("swipeUp");
             }
             if (Math.abs(deltaX) >= 50 || Math.abs(deltaY) >= 50) {
               $this.unbind('touchmove', touchmove);
