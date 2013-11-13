@@ -20,6 +20,15 @@ $black: #323232;
 $background-orange: #fcbd92;
 $background-grey: #ededed;
 
+/* MIXINS*/
+@mixin transition-duration($time){
+  transition-duration: $time;
+  -webkit-transition-duration: $time;
+  -moz-transition-duration: $time;
+  -o-transition-duration: $time;
+  -ms-transition-duration: $time;
+}
+
 html,body{
   height: 100%;
   width: 100%;

@@ -8,11 +8,12 @@ section{
   float: left;
   width: 25%;
   padding: 30px 4% 0;
-  &#title{
+  &#title{ 
+    @include transition-duration(.5s);
     text-align: center;
   }
   &#information{
-    background-color: $background-grey;
+    background-color: white;
     overflow: scroll;
   }
 }

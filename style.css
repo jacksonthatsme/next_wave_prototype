@@ -76,13 +76,14 @@ a {
 }
 
 /* VARIABLES */
-/* line 23, sass/_base.scss */
+/* MIXINS*/
+/* line 32, sass/_base.scss */
 html, body {
   height: 100%;
   width: 100%;
 }
 
-/* line 27, sass/_base.scss */
+/* line 36, sass/_base.scss */
 body {
   margin: 0px;
   font-family: "brandon_grotesque", arial, helvetica;
@@ -109,15 +110,20 @@ section {
 }
 /* line 11, sass/_layout.scss */
 section#title {
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   text-align: center;
 }
-/* line 14, sass/_layout.scss */
+/* line 15, sass/_layout.scss */
 section#information {
-  background-color: #ededed;
+  background-color: white;
   overflow: scroll;
 }
 
-/* line 19, sass/_layout.scss */
+/* line 20, sass/_layout.scss */
 #banner {
   position: fixed;
   z-index: -1;
@@ -129,7 +135,7 @@ section#information {
   overflow: hidden;
 }
 
-/* line 30, sass/_layout.scss */
+/* line 31, sass/_layout.scss */
 #one-page-wrap {
   height: 100%;
 }
@@ -271,13 +277,28 @@ p {
 /* line 34, sass/_module.scss */
 #banner img {
   height: 100%;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
 }
 
 /* line 3, sass/_state.scss */
 .viewing-page-2 #banner img, .viewing-page-3 #banner img, .viewing-page-4 #banner img {
   opacity: .2;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
 }
-/* line 7, sass/_state.scss */
+/* line 8, sass/_state.scss */
 .viewing-page-2 #title, .viewing-page-3 #title, .viewing-page-4 #title {
   color: #fcbd92;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
 }

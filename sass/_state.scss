@@ -2,9 +2,11 @@
   #banner{
     img{
       opacity: .2;
+      @include transition-duration(.5s);
     }
   }
   #title{
     color: $background-orange;
+    @include transition-duration(.5s);
   }
 }

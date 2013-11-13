@@ -33,5 +33,6 @@
   background-color: black;
   img{
     height: 100%;
+    @include transition-duration(.5s);
   }
 }
