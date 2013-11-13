@@ -129,6 +129,11 @@ section#information {
   overflow: hidden;
 }
 
+/* line 31, sass/_layout.scss */
+#one-page-wrap {
+  height: 100%;
+}
+
 /* line 1, sass/_typography.scss */
 h1 {
   font-family: "knewave";
@@ -262,5 +267,10 @@ p {
 /* line 33, sass/_module.scss */
 #banner img {
   height: 100%;
-  width: 100%;
+}
+
+/* line 37, sass/_module.scss */
+h1 {
+  background-color: aqua;
+  -webkit-text-fill-color: transparent;
 }

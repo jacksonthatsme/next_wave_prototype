@@ -71,8 +71,6 @@
 
       });
     };
-	
-
   $.fn.onepage_scroll = function(options){
     var settings = $.extend({}, defaults, options),
         el = $(this),
@@ -250,6 +248,15 @@
     return false;
     
   }
+      $('.direction').click(function(){
+      if ($(this).attr('data-direction') === 'next'){
+        el.moveDown();
+      }
+      else if ($(this).attr('data-direction') === 'prev'){
+        el.moveUp();
+      }
+    });
+
   
 }(window.jQuery);
 

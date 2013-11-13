@@ -9,12 +9,12 @@ $(document).ready(function() {
             event.preventDefault();
         });
   });
-  $("body").onepage_scroll({
+  $("#one-page-wrap").onepage_scroll({
      sectionContainer: "section", 
      easing: "ease",
-     animationTime: 1000,
-     pagination: true,
-     updateURL: false
+     animationTime: 600,
+     pagination: false,
+     updateURL: true
    });
    $("h1").fitText(.4);
 });
