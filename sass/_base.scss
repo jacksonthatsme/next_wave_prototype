@@ -39,5 +39,7 @@ body{
  font-size: 16px;
  color: $black;
  width: calc(100% * 2);
- background-color: $background-orange;
+ width: -moz-calc(100% * 2);
+ width: -webkit-calc(100% * 2);
+ width: -o-calc(100% * 2);
 }

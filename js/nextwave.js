@@ -16,5 +16,22 @@ $(document).ready(function() {
      pagination: false,
      updateURL: true
    });
-   $("h1").fitText(.4);
+   $("h1").fitText(.35, {maxFontSize: '158px'});
+   
+   var img = $("#banner > img");
+   
+   var imgH = img.height();
+   var imgW = img.width();
+   
+   var ww = $(window).width();
+   
+   var wH = ww/2;
+   
+   if( wH < imgW ){
+     img.css("height", "100%");
+   }
+   else if( wh > imgW ){
+     img.css("width", "100%");
+   }
+
 });

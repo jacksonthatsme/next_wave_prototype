@@ -90,11 +90,13 @@ body {
   font-size: 16px;
   color: #323232;
   width: calc(100% * 2);
-  background-color: #fcbd92;
+  width: -moz-calc(100% * 2);
+  width: -webkit-calc(100% * 2);
+  width: -o-calc(100% * 2);
 }
 
 /* line 1, sass/_layout.scss */
-.box, section, #banner {
+.box, section, #banner, #more {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -116,11 +118,11 @@ section#title {
   -o-transition-duration: 0.5s;
   -ms-transition-duration: 0.5s;
   text-align: center;
+  padding: 30px 2% 0;
 }
-/* line 15, sass/_layout.scss */
-section#information {
-  background-color: white;
-  overflow: scroll;
+/* line 16, sass/_layout.scss */
+section.information {
+  background-color: #ffffff;
 }
 /* line 19, sass/_layout.scss */
 section#map {
@@ -133,15 +135,43 @@ section#map {
   z-index: -1;
   top: 0px;
   left: 0px;
-  background-color: aqua;
   height: 100%;
   width: 50%;
   overflow: hidden;
 }
 
-/* line 34, sass/_layout.scss */
+/* line 33, sass/_layout.scss */
+#more {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  padding: 30px 4% 0;
+  width: 50%;
+  display: none;
+}
+
+/* line 44, sass/_layout.scss */
 #one-page-wrap {
   height: 100%;
+}
+
+/* line 47, sass/_layout.scss */
+.branding {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
+/* line 53, sass/_layout.scss */
+.branding p {
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
 }
 
 /* line 1, sass/_typography.scss */
@@ -152,57 +182,63 @@ h1 {
   text-align: center;
   letter-spacing: -6px;
   padding: 80px 0px 50px;
+  transform: rotate(10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
 }
 
-/* line 9, sass/_typography.scss */
+/* line 14, sass/_typography.scss */
 h3 {
   font-weight: 700;
   font-size: 1em;
   text-transform: uppercase;
 }
 
-/* line 16, sass/_typography.scss */
+/* line 21, sass/_typography.scss */
 .direction {
   font-size: 1em;
   font-weight: 200;
 }
 
-/* line 20, sass/_typography.scss */
+/* line 25, sass/_typography.scss */
 .category {
-  font-weight: 700;
+  font-weight: 300;
   font-size: .7em;
   text-transform: uppercase;
 }
 
-/* line 25, sass/_typography.scss */
+/* line 30, sass/_typography.scss */
 .byline {
   font-weight: 700;
   font-size: 1em;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
-/* line 30, sass/_typography.scss */
+/* line 36, sass/_typography.scss */
 p {
   font-size: 1em;
   line-height: 1.4em;
 }
 
-/* line 36, sass/_typography.scss */
+/* line 42, sass/_typography.scss */
 .dates ul li.date {
   text-align: center;
 }
-/* line 38, sass/_typography.scss */
+/* line 44, sass/_typography.scss */
 .dates ul li.date span.month {
   font-size: .8em;
 }
-/* line 41, sass/_typography.scss */
+/* line 47, sass/_typography.scss */
 .dates ul li.date span.day {
   font-size: 4em;
   font-weight: 700;
   line-height: 1em;
   letter-spacing: -.08em;
 }
-/* line 47, sass/_typography.scss */
+/* line 53, sass/_typography.scss */
 .dates ul li.date span.ordinal {
   font-weight: 700;
   font-size: .9em;
@@ -210,31 +246,31 @@ p {
   padding-left: .4em;
 }
 
-/* line 58, sass/_typography.scss */
+/* line 64, sass/_typography.scss */
 .details dl dt {
   font-weight: 200;
   font-style: 1em;
 }
-/* line 61, sass/_typography.scss */
+/* line 67, sass/_typography.scss */
 .details dl dt:not(:first-child) {
   margin-top: 10px;
 }
-/* line 65, sass/_typography.scss */
+/* line 71, sass/_typography.scss */
 .details dl dd {
   font-weight: 700;
   font-size: 1em;
 }
 
-/* line 73, sass/_typography.scss */
+/* line 79, sass/_typography.scss */
 .add-info ul li {
   font-weight: 200;
 }
 
-/* line 80, sass/_typography.scss */
+/* line 86, sass/_typography.scss */
 .notes ul li {
   font-weight: 200;
 }
-/* line 82, sass/_typography.scss */
+/* line 88, sass/_typography.scss */
 .notes ul li:before {
   content: "+ ";
   font-weight: 500;
@@ -242,14 +278,25 @@ p {
   margin-left: -1em;
 }
 
-/* line 2, sass/_module.scss */
-.direction a {
-  position: absolute;
-  bottom: 30px;
+/* line 97, sass/_typography.scss */
+.branding {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-/* line 8, sass/_module.scss */
-#information div {
+/* line 1, sass/_module.scss */
+.direction {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  display: block;
+  width: 85%;
+  text-align: center;
+}
+
+/* line 10, sass/_module.scss */
+.information div {
   padding-top: 30px;
   background-image: url("images/marker.png");
   background-repeat: no-repeat;
@@ -257,7 +304,7 @@ p {
   margin-bottom: 50px;
 }
 
-/* line 18, sass/_module.scss */
+/* line 20, sass/_module.scss */
 .dates ul li.date {
   height: 100px;
   width: 100px;
@@ -266,21 +313,24 @@ p {
   box-sizing: border-box;
   padding: 8px;
   display: inline-block;
-  margin: 0px 13px 15px 0px;
+  margin: 13px 15px;
   background-color: white;
 }
-/* line 26, sass/_module.scss */
+/* line 28, sass/_module.scss */
 .dates ul li.date span.month {
   display: block;
 }
 
-/* line 32, sass/_module.scss */
-#banner {
-  background-color: black;
-}
 /* line 34, sass/_module.scss */
+#banner {
+  background-color: white;
+  text-align: center;
+  background-image: url("images/dot.png");
+}
+/* line 38, sass/_module.scss */
 #banner img {
   height: 100%;
+  opacity: .8;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -288,7 +338,18 @@ p {
   -ms-transition-duration: 0.5s;
 }
 
-/* line 3, sass/_state.scss */
+/* line 45, sass/_module.scss */
+.dates ul {
+  outline: black 1px solid;
+}
+
+/* line 2, sass/_state.scss */
+.viewing-page-2 #banner, .viewing-page-3 #banner, .viewing-page-4 #banner {
+  background-color: white;
+  background-image: inherit;
+  background-image: url("images/dot.png");
+}
+/* line 6, sass/_state.scss */
 .viewing-page-2 #banner img, .viewing-page-3 #banner img, .viewing-page-4 #banner img {
   opacity: .2;
   transition-duration: 0.5s;
@@ -297,12 +358,27 @@ p {
   -o-transition-duration: 0.5s;
   -ms-transition-duration: 0.5s;
 }
-/* line 8, sass/_state.scss */
+/* line 11, sass/_state.scss */
 .viewing-page-2 #title, .viewing-page-3 #title, .viewing-page-4 #title {
-  color: #fcbd92;
+  color: #ffffff;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   -ms-transition-duration: 0.5s;
+}
+
+/* line 18, sass/_state.scss */
+.viewing-page-1 p.branding span.next, .viewing-page-2 p.branding span.next {
+  color: white;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+}
+
+/* line 25, sass/_state.scss */
+.viewing-page-4 #more, .viewing-page-3 #more, .viewing-page-5 #more {
+  display: block;
 }

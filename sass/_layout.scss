@@ -11,10 +11,10 @@ section{
   &#title{ 
     @include transition-duration(.5s);
     text-align: center;
+    padding: 30px 2% 0;
   }
-  &#information{
-    background-color: white;
-    overflow: scroll;
+  &.information{
+    background-color: #ffffff;
   }
   &#map{
     background: aqua;
@@ -26,11 +26,31 @@ section{
   z-index: -1;
   top: 0px;
   left: 0px;
-  background-color: aqua;
   height: 100%;
   width: 50%;
   overflow: hidden;
 }
+#more{
+  @extend .box;
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  padding: 30px 4% 0;
+  width: 50%;
+  display: none;
+}
 #one-page-wrap{
   height: 100%;
+}
+.branding{
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  p{
+    @include transition-duration(.5s);
+  }
 }

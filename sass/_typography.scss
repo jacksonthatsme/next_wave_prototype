@@ -5,6 +5,11 @@ h1{
   text-align: center;
   letter-spacing: -6px;
   padding: 80px 0px 50px;
+  transform: rotate(10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
 }
 h3{
   font-weight: 700;
@@ -18,7 +23,7 @@ h4{
   font-weight: 200;
 }
 .category{
-  font-weight: 700;
+  font-weight: 300;
   font-size: .7em;
   text-transform: uppercase;
 }
@@ -26,6 +31,7 @@ h4{
   font-weight: 700;
   font-size: 1em;
   text-transform: uppercase; 
+  margin-top: 20px;
 }
 p{
   font-size: 1em;
@@ -87,4 +93,9 @@ p{
       }
     }
   }
+}
+.branding{
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
