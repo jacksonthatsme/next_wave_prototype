@@ -65,11 +65,15 @@ li {
 
 /* line 8, sass/_base.scss */
 .clear {
-  clear: both;
-  margin: 0px;
+  clear: both !important;
+  margin: 0px !important;
+  display: none !important;
+  padding: 0px !important;
+  height: 0px !important;
+  width: !important;
 }
 
-/* line 12, sass/_base.scss */
+/* line 16, sass/_base.scss */
 a {
   color: inherit;
   text-decoration: none;
@@ -77,18 +81,21 @@ a {
 
 /* VARIABLES */
 /* MIXINS*/
-/* line 32, sass/_base.scss */
+/* line 36, sass/_base.scss */
 html, body {
   height: 100%;
   width: 100%;
 }
 
-/* line 36, sass/_base.scss */
+/* line 40, sass/_base.scss */
 body {
   margin: 0px;
   font-family: "brandon_grotesque", arial, helvetica;
   font-size: 16px;
   color: #323232;
+}
+/* line 45, sass/_base.scss */
+body.single {
   width: calc(100% * 2);
   width: -moz-calc(100% * 2);
   width: -webkit-calc(100% * 2);
@@ -158,20 +165,39 @@ section#map {
 }
 
 /* line 47, sass/_layout.scss */
-.branding {
-  position: fixed;
-  top: 20px;
-  width: 100%;
+header {
   text-align: center;
-  z-index: 100;
+  position: fixed;
+  top: 0px;
+  padding: 10px 0px;
+  width: 100%;
 }
-/* line 53, sass/_layout.scss */
-.branding p {
-  transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
+
+/* line 54, sass/_layout.scss */
+ul.archive {
+  margin-top: 45px;
+}
+/* line 56, sass/_layout.scss */
+ul.archive li.event-link {
+  width: 100%;
+}
+/* line 58, sass/_layout.scss */
+ul.archive li.event-link div {
+  width: 50%;
+  float: left;
+  height: 300px;
+  text-align: center;
+}
+/* line 63, sass/_layout.scss */
+ul.archive li.event-link div.img-container {
+  overflow: hidden;
+}
+/* line 66, sass/_layout.scss */
+ul.archive li.event-link div.info-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 /* line 1, sass/_typography.scss */
@@ -198,20 +224,28 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 23, sass/_typography.scss */
+/* line 21, sass/_typography.scss */
+h4 {
+  font-family: "knewave";
+  font-size: 6em;
+  letter-spacing: -6px;
+  line-height: .6em;
+}
+
+/* line 27, sass/_typography.scss */
 .direction {
   font-size: 1em;
   font-weight: 200;
 }
 
-/* line 27, sass/_typography.scss */
+/* line 31, sass/_typography.scss */
 .category {
   font-weight: 300;
   font-size: .7em;
   text-transform: uppercase;
 }
 
-/* line 32, sass/_typography.scss */
+/* line 36, sass/_typography.scss */
 .byline {
   font-weight: 700;
   font-size: 1em;
@@ -219,28 +253,28 @@ h3 {
   margin-top: 20px;
 }
 
-/* line 38, sass/_typography.scss */
+/* line 42, sass/_typography.scss */
 p {
   font-size: 1em;
   line-height: 1.4em;
 }
 
-/* line 44, sass/_typography.scss */
+/* line 48, sass/_typography.scss */
 .dates ul li.date {
   text-align: center;
 }
-/* line 46, sass/_typography.scss */
+/* line 50, sass/_typography.scss */
 .dates ul li.date span.month {
   font-size: .8em;
 }
-/* line 49, sass/_typography.scss */
+/* line 53, sass/_typography.scss */
 .dates ul li.date span.day {
   font-size: 4em;
   font-weight: 700;
   line-height: 1em;
   letter-spacing: -.08em;
 }
-/* line 55, sass/_typography.scss */
+/* line 59, sass/_typography.scss */
 .dates ul li.date span.ordinal {
   font-weight: 700;
   font-size: .9em;
@@ -248,31 +282,31 @@ p {
   padding-left: .4em;
 }
 
-/* line 66, sass/_typography.scss */
+/* line 70, sass/_typography.scss */
 .details dl dt {
   font-weight: 200;
   font-style: 1em;
 }
-/* line 69, sass/_typography.scss */
+/* line 73, sass/_typography.scss */
 .details dl dt:not(:first-child) {
   margin-top: 10px;
 }
-/* line 73, sass/_typography.scss */
+/* line 77, sass/_typography.scss */
 .details dl dd {
   font-weight: 700;
   font-size: 1em;
 }
 
-/* line 81, sass/_typography.scss */
+/* line 85, sass/_typography.scss */
 .add-info ul li {
   font-weight: 200;
 }
 
-/* line 88, sass/_typography.scss */
+/* line 92, sass/_typography.scss */
 .notes ul li {
   font-weight: 200;
 }
-/* line 90, sass/_typography.scss */
+/* line 94, sass/_typography.scss */
 .notes ul li:before {
   content: "+ ";
   font-weight: 500;
@@ -280,7 +314,7 @@ p {
   margin-left: -1em;
 }
 
-/* line 99, sass/_typography.scss */
+/* line 103, sass/_typography.scss */
 .branding {
   font-size: 1.2em;
   font-weight: 600;

@@ -44,13 +44,29 @@ section{
 #one-page-wrap{
   height: 100%;
 }
-.branding{
-  position: fixed;
-  top: 20px;
-  width: 100%;
+header{
   text-align: center;
-  z-index: 100;
-  p{
-    @include transition-duration(.5s);
+  position: fixed;
+  top: 0px;
+  padding: 10px 0px;
+  width: 100%;
+}
+ul.archive{
+  margin-top: 45px;
+  li.event-link{
+    width: 100%;
+    div{
+      width: 50%;
+      float: left;
+      height: 300px;
+      text-align: center;
+      &.img-container{
+        overflow: hidden;
+      }
+      &.info-container{
+        @include box-sizing(border-box);
+        padding: 20px;
+      }
+    }
   }
 }
