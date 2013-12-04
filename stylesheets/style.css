@@ -1,0 +1,364 @@
+@import url(http://fonts.googleapis.com/css?family=Knewave);
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("./fonts/brandon_thin-webfont.eot");
+  src: url("./fonts/brandon_thin-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_thin-webfont.woff") format("woff"), url("./fonts/brandon_thin-webfont.ttf") format("truetype"), url("./fonts/brandon_thin-webfont.svg#brandon_grotesquethin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("./fonts/brandon_reg-webfont.eot");
+  src: url("./fonts/brandon_reg-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_reg-webfont.woff") format("woff"), url("./fonts/brandon_reg-webfont.ttf") format("truetype"), url("./fonts/brandon_reg-webfont.svg#brandon_grotesque_regularRg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("./fonts/brandon_med-webfont.eot");
+  src: url("./fonts/brandon_med-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_med-webfont.woff") format("woff"), url("./fonts/brandon_med-webfont.ttf") format("truetype"), url("./fonts/brandon_med-webfont.svg#brandon_grotesquemedium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("./fonts/brandon_light-webfont.eot");
+  src: url("./fonts/brandon_light-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_light-webfont.woff") format("woff"), url("./fonts/brandon_light-webfont.ttf") format("truetype"), url("./fonts/brandon_light-webfont.svg#brandon_grotesquelight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("./fonts/brandon_bld-webfont.eot");
+  src: url("./fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_bld-webfont.woff") format("woff"), url("./fonts/brandon_bld-webfont.ttf") format("truetype"), url("./fonts/brandon_bld-webfont.svg#brandon_grotesquebold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesque';
+  src: url("./fonts/brandon_blk-webfont.eot");
+  src: url("./fonts/brandon_blk-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_blk-webfont.woff") format("woff"), url("./fonts/brandon_blk-webfont.ttf") format("truetype"), url("./fonts/brandon_blk-webfont.svg#brandon_grotesqueblack") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+/* Base */
+/* line 3, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_base.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 6, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_base.scss */
+li {
+  list-style-type: none; }
+
+/* line 9, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_base.scss */
+.clear {
+  clear: both !important;
+  margin: 0px !important;
+  display: none !important;
+  padding: 0px !important;
+  height: 0px !important;
+  width: !important; }
+
+/* line 17, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_base.scss */
+a {
+  color: inherit;
+  text-decoration: none; }
+
+/* VARIABLES */
+/* MIXINS*/
+/* line 37, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_base.scss */
+html, body {
+  height: 100%;
+  width: 100%; }
+
+/* line 41, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_base.scss */
+body {
+  margin: 0px;
+  font-family: "brandon_grotesque", arial, helvetica;
+  font-size: 16px;
+  color: #323232; }
+  /* line 46, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_base.scss */
+  body.single {
+    width: calc(100% * 2);
+    width: -moz-calc(100% * 2);
+    width: -webkit-calc(100% * 2);
+    width: -o-calc(100% * 2); }
+
+/* line 1, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+.box, section, #banner, #more {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  display: block; }
+
+/* line 6, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+section {
+  float: left;
+  width: 25%;
+  padding: 65px 4% 0; }
+  /* line 11, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+  section#title {
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    text-align: center;
+    padding: 30px 2% 0; }
+  /* line 16, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+  section.information {
+    background-color: #ffffff; }
+  /* line 19, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+  section#map {
+    background: aqua; }
+
+/* line 23, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+#banner {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 50%;
+  overflow: hidden; }
+
+/* line 33, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+#more {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  padding: 30px 4% 0;
+  width: 50%;
+  display: none; }
+
+/* line 44, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+#one-page-wrap {
+  height: 100%; }
+
+/* line 47, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+header {
+  position: fixed;
+  top: 0px;
+  padding: 22px 8%;
+  width: 100%;
+  z-index: 100; }
+
+/* line 54, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+ul.archive {
+  margin-top: 65px; }
+  /* line 56, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+  ul.archive li.event-link {
+    width: 100%; }
+    /* line 58, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+    ul.archive li.event-link .img-container, ul.archive li.event-link .info-container {
+      width: 50%;
+      float: left;
+      height: 300px;
+      text-align: center; }
+      /* line 63, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+      ul.archive li.event-link .img-container.img-container, ul.archive li.event-link .info-container.img-container {
+        overflow: hidden;
+        background-image: url("images/dot.png"); }
+        /* line 66, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+        ul.archive li.event-link .img-container.img-container img, ul.archive li.event-link .info-container.img-container img {
+          opacity: .8; }
+      /* line 70, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_layout.scss */
+      ul.archive li.event-link .img-container.info-container, ul.archive li.event-link .info-container.info-container {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 20px; }
+
+/* line 1, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+h1 {
+  font-family: "knewave";
+  font-size: 6.1em;
+  line-height: .8em;
+  text-align: center;
+  letter-spacing: -6px;
+  padding: 80px 0px 50px;
+  /*
+transform: rotate(10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+*/ }
+
+/* line 16, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+h3 {
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase; }
+
+/* line 21, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+h4 {
+  font-family: "knewave";
+  font-size: 5em;
+  letter-spacing: -6px;
+  line-height: .8em;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+/* line 29, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+.direction {
+  font-size: 1em;
+  font-weight: 200; }
+
+/* line 33, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+.category {
+  font-weight: 300;
+  font-size: .7em;
+  text-transform: uppercase; }
+
+/* line 38, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+.byline {
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 20px; }
+
+/* line 44, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+p {
+  font-size: 1em;
+  line-height: 1.4em; }
+
+/* line 50, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+.details dl dt {
+  font-weight: 200;
+  font-style: 1em; }
+  /* line 53, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+  .details dl dt:not(:first-child) {
+    margin-top: 10px; }
+/* line 57, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+.details dl dd {
+  font-weight: 700;
+  font-size: 1em; }
+
+/* line 65, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+.add-info ul li, .notes ul li {
+  font-weight: 200; }
+
+/* line 70, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+.branding {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+/* line 77, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+.dates ul li.date {
+  font-size: 1.2em; }
+  /* line 79, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+  .dates ul li.date span.month {
+    font-weight: 700; }
+  /* line 82, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+  .dates ul li.date span.day {
+    font-weight: 700; }
+  /* line 85, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+  .dates ul li.date span.ordinal {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: .6em; }
+
+/* line 94, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_typography.scss */
+#more h2 {
+  text-align: center; }
+
+/* line 1, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+.direction {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  display: block;
+  width: 85%;
+  text-align: center; }
+
+/* line 10, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+.information div {
+  padding-top: 30px;
+    /*
+background-image: url('images/marker.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+*/
+  margin-bottom: 20px; }
+
+/* line 26, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+#banner {
+  background-color: white;
+  text-align: center;
+  background-image: url("images/dot.png"); }
+  /* line 30, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+  #banner img {
+    height: 100%;
+    opacity: .8;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s; }
+
+/* line 38, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+.dates ul li.date {
+  border-bottom: 1px solid #323232; }
+  /* line 40, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+  .dates ul li.date:not(:first-child) {
+    padding: 10px 0px 0px; }
+
+/* line 46, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+#more {
+  text-align: center; }
+  /* line 48, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+  #more ul.similar-events {
+    height: 100%; }
+    /* line 50, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+    #more ul.similar-events li {
+      overflow: hidden;
+      height: 30%; }
+      /* line 55, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_module.scss */
+      #more ul.similar-events li img {
+        position: relative;
+        top: -20px; }
+
+/* line 2, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_state.scss */
+.viewing-page-2 #banner, .viewing-page-3 #banner, .viewing-page-4 #banner {
+  background-color: white;
+  background-image: inherit;
+  background-image: url("images/dot.png"); }
+  /* line 6, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_state.scss */
+  .viewing-page-2 #banner img, .viewing-page-3 #banner img, .viewing-page-4 #banner img {
+    opacity: .2;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s; }
+/* line 11, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_state.scss */
+.viewing-page-2 #title, .viewing-page-3 #title, .viewing-page-4 #title {
+  color: #ffffff;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s; }
+
+/* line 17, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_state.scss */
+.viewing-page-1 p.branding, .viewing-page-2 p.branding {
+  color: white;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s; }
+
+/* line 23, /Users/jaredlynch/Sites/Next_Wave/source/stylesheets/_state.scss */
+.viewing-page-4 #more, .viewing-page-3 #more, .viewing-page-5 #more {
+  display: block; }
