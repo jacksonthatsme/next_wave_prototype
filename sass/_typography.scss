@@ -20,9 +20,11 @@ h3{
 }
 h4{
   font-family:  $knewave;
-  font-size: 6em;
+  font-size: 5em;
   letter-spacing: -6px;
-  line-height: .6em;
+  line-height: .8em;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .direction{
   font-size: 1em;
@@ -43,28 +45,6 @@ p{
   font-size: 1em;
   line-height: 1.4em;
 }
-.dates{
-  ul{
-    li.date{
-      text-align: center;
-      span.month{
-        font-size: .8em;
-      }
-      span.day{
-        font-size: 4em;
-        font-weight: 700;
-        line-height: 1em;
-        letter-spacing: -.08em;
-      }
-      span.ordinal{
-        font-weight: 700;
-        font-size: .9em;
-        text-transform: uppercase;
-        padding-left: .4em;
-      }
-    }
-  }
-}
 .details{
   dl{
     dt{
@@ -80,23 +60,10 @@ p{
     }
   }
 }
-.add-info{
+.add-info, .notes{
   ul{
     li{
       font-weight: 200;
-    }
-  }
-}
-.notes{
-  ul{
-    li{
-      font-weight: 200;
-      &:before{
-        content: "+ ";
-        font-weight: 500;
-        color: $background-orange;
-        margin-left: -1em;
-      }
     }
   }
 }
@@ -104,4 +71,27 @@ p{
   font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
+}
+.dates{
+  ul{
+    li.date{
+      font-size: 1.2em;
+      span.month{
+        font-weight: 700;
+      }
+      span.day{
+        font-weight: 700;
+      }
+      span.ordinal{
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: .6em;
+      }
+    }
+  }
+}
+#more{
+ h2{
+   text-align: center;
+ } 
 }

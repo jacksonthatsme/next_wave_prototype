@@ -1,48 +1,48 @@
 @import url(http://fonts.googleapis.com/css?family=Knewave);
 @font-face {
   font-family: 'brandon_grotesque';
-  src: url("./fonts/brandon_thin-webfont.eot");
-  src: url("./fonts/brandon_thin-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_thin-webfont.woff") format("woff"), url("./fonts/brandon_thin-webfont.ttf") format("truetype"), url("./fonts/brandon_thin-webfont.svg#brandon_grotesquethin") format("svg");
+  src: url("..../fonts/brandon_thin-webfont.eot");
+  src: url("..../fonts/brandon_thin-webfont.eot?#iefix") format("embedded-opentype"), url("..../fonts/brandon_thin-webfont.woff") format("woff"), url("..../fonts/brandon_thin-webfont.ttf") format("truetype"), url("..../fonts/brandon_thin-webfont.svg#brandon_grotesquethin") format("svg");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'brandon_grotesque';
-  src: url("./fonts/brandon_reg-webfont.eot");
-  src: url("./fonts/brandon_reg-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_reg-webfont.woff") format("woff"), url("./fonts/brandon_reg-webfont.ttf") format("truetype"), url("./fonts/brandon_reg-webfont.svg#brandon_grotesque_regularRg") format("svg");
+  src: url("..../fonts/brandon_reg-webfont.eot");
+  src: url("..../fonts/brandon_reg-webfont.eot?#iefix") format("embedded-opentype"), url("..../fonts/brandon_reg-webfont.woff") format("woff"), url("..../fonts/brandon_reg-webfont.ttf") format("truetype"), url("..../fonts/brandon_reg-webfont.svg#brandon_grotesque_regularRg") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'brandon_grotesque';
-  src: url("./fonts/brandon_med-webfont.eot");
-  src: url("./fonts/brandon_med-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_med-webfont.woff") format("woff"), url("./fonts/brandon_med-webfont.ttf") format("truetype"), url("./fonts/brandon_med-webfont.svg#brandon_grotesquemedium") format("svg");
+  src: url("..../fonts/brandon_med-webfont.eot");
+  src: url("..../fonts/brandon_med-webfont.eot?#iefix") format("embedded-opentype"), url("..../fonts/brandon_med-webfont.woff") format("woff"), url("..../fonts/brandon_med-webfont.ttf") format("truetype"), url("..../fonts/brandon_med-webfont.svg#brandon_grotesquemedium") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'brandon_grotesque';
-  src: url("./fonts/brandon_light-webfont.eot");
-  src: url("./fonts/brandon_light-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_light-webfont.woff") format("woff"), url("./fonts/brandon_light-webfont.ttf") format("truetype"), url("./fonts/brandon_light-webfont.svg#brandon_grotesquelight") format("svg");
+  src: url("..../fonts/brandon_light-webfont.eot");
+  src: url("..../fonts/brandon_light-webfont.eot?#iefix") format("embedded-opentype"), url("..../fonts/brandon_light-webfont.woff") format("woff"), url("..../fonts/brandon_light-webfont.ttf") format("truetype"), url("..../fonts/brandon_light-webfont.svg#brandon_grotesquelight") format("svg");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'brandon_grotesque';
-  src: url("./fonts/brandon_bld-webfont.eot");
-  src: url("./fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_bld-webfont.woff") format("woff"), url("./fonts/brandon_bld-webfont.ttf") format("truetype"), url("./fonts/brandon_bld-webfont.svg#brandon_grotesquebold") format("svg");
+  src: url("..../fonts/brandon_bld-webfont.eot");
+  src: url("..../fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("..../fonts/brandon_bld-webfont.woff") format("woff"), url("..../fonts/brandon_bld-webfont.ttf") format("truetype"), url("..../fonts/brandon_bld-webfont.svg#brandon_grotesquebold") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'brandon_grotesque';
-  src: url("./fonts/brandon_blk-webfont.eot");
-  src: url("./fonts/brandon_blk-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/brandon_blk-webfont.woff") format("woff"), url("./fonts/brandon_blk-webfont.ttf") format("truetype"), url("./fonts/brandon_blk-webfont.svg#brandon_grotesqueblack") format("svg");
+  src: url("..../fonts/brandon_blk-webfont.eot");
+  src: url("..../fonts/brandon_blk-webfont.eot?#iefix") format("embedded-opentype"), url("..../fonts/brandon_blk-webfont.woff") format("woff"), url("..../fonts/brandon_blk-webfont.ttf") format("truetype"), url("..../fonts/brandon_blk-webfont.svg#brandon_grotesqueblack") format("svg");
   font-weight: 900;
   font-style: normal;
 }
@@ -115,7 +115,7 @@ body.single {
 section {
   float: left;
   width: 25%;
-  padding: 30px 4% 0;
+  padding: 65px 4% 0;
 }
 /* line 11, sass/_layout.scss */
 section#title {
@@ -166,34 +166,39 @@ section#map {
 
 /* line 47, sass/_layout.scss */
 header {
-  text-align: center;
   position: fixed;
   top: 0px;
-  padding: 10px 0px;
+  padding: 22px 8%;
   width: 100%;
+  z-index: 100;
 }
 
 /* line 54, sass/_layout.scss */
 ul.archive {
-  margin-top: 45px;
+  margin-top: 65px;
 }
 /* line 56, sass/_layout.scss */
 ul.archive li.event-link {
   width: 100%;
 }
 /* line 58, sass/_layout.scss */
-ul.archive li.event-link div {
+ul.archive li.event-link .img-container, ul.archive li.event-link .info-container {
   width: 50%;
   float: left;
   height: 300px;
   text-align: center;
 }
 /* line 63, sass/_layout.scss */
-ul.archive li.event-link div.img-container {
+ul.archive li.event-link .img-container.img-container, ul.archive li.event-link .info-container.img-container {
   overflow: hidden;
+  background-image: url("images/dot.png");
 }
 /* line 66, sass/_layout.scss */
-ul.archive li.event-link div.info-container {
+ul.archive li.event-link .img-container.img-container img, ul.archive li.event-link .info-container.img-container img {
+  opacity: .8;
+}
+/* line 70, sass/_layout.scss */
+ul.archive li.event-link .img-container.info-container, ul.archive li.event-link .info-container.info-container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -227,25 +232,27 @@ h3 {
 /* line 21, sass/_typography.scss */
 h4 {
   font-family: "knewave";
-  font-size: 6em;
+  font-size: 5em;
   letter-spacing: -6px;
-  line-height: .6em;
+  line-height: .8em;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-/* line 27, sass/_typography.scss */
+/* line 29, sass/_typography.scss */
 .direction {
   font-size: 1em;
   font-weight: 200;
 }
 
-/* line 31, sass/_typography.scss */
+/* line 33, sass/_typography.scss */
 .category {
   font-weight: 300;
   font-size: .7em;
   text-transform: uppercase;
 }
 
-/* line 36, sass/_typography.scss */
+/* line 38, sass/_typography.scss */
 .byline {
   font-weight: 700;
   font-size: 1em;
@@ -253,72 +260,61 @@ h4 {
   margin-top: 20px;
 }
 
-/* line 42, sass/_typography.scss */
+/* line 44, sass/_typography.scss */
 p {
   font-size: 1em;
   line-height: 1.4em;
 }
 
-/* line 48, sass/_typography.scss */
-.dates ul li.date {
-  text-align: center;
-}
 /* line 50, sass/_typography.scss */
-.dates ul li.date span.month {
-  font-size: .8em;
-}
-/* line 53, sass/_typography.scss */
-.dates ul li.date span.day {
-  font-size: 4em;
-  font-weight: 700;
-  line-height: 1em;
-  letter-spacing: -.08em;
-}
-/* line 59, sass/_typography.scss */
-.dates ul li.date span.ordinal {
-  font-weight: 700;
-  font-size: .9em;
-  text-transform: uppercase;
-  padding-left: .4em;
-}
-
-/* line 70, sass/_typography.scss */
 .details dl dt {
   font-weight: 200;
   font-style: 1em;
 }
-/* line 73, sass/_typography.scss */
+/* line 53, sass/_typography.scss */
 .details dl dt:not(:first-child) {
   margin-top: 10px;
 }
-/* line 77, sass/_typography.scss */
+/* line 57, sass/_typography.scss */
 .details dl dd {
   font-weight: 700;
   font-size: 1em;
 }
 
-/* line 85, sass/_typography.scss */
-.add-info ul li {
+/* line 65, sass/_typography.scss */
+.add-info ul li, .notes ul li {
   font-weight: 200;
 }
 
-/* line 92, sass/_typography.scss */
-.notes ul li {
-  font-weight: 200;
-}
-/* line 94, sass/_typography.scss */
-.notes ul li:before {
-  content: "+ ";
-  font-weight: 500;
-  color: #fcbd92;
-  margin-left: -1em;
-}
-
-/* line 103, sass/_typography.scss */
+/* line 70, sass/_typography.scss */
 .branding {
   font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+/* line 77, sass/_typography.scss */
+.dates ul li.date {
+  font-size: 1.2em;
+}
+/* line 79, sass/_typography.scss */
+.dates ul li.date span.month {
+  font-weight: 700;
+}
+/* line 82, sass/_typography.scss */
+.dates ul li.date span.day {
+  font-weight: 700;
+}
+/* line 85, sass/_typography.scss */
+.dates ul li.date span.ordinal {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: .6em;
+}
+
+/* line 94, sass/_typography.scss */
+#more h2 {
+  text-align: center;
 }
 
 /* line 1, sass/_module.scss */
@@ -334,36 +330,21 @@ p {
 /* line 10, sass/_module.scss */
 .information div {
   padding-top: 30px;
-  background-image: url("images/marker.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  margin-bottom: 50px;
+    /*
+background-image: url('images/marker.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+*/
+  margin-bottom: 20px;
 }
 
-/* line 20, sass/_module.scss */
-.dates ul li.date {
-  height: 100px;
-  width: 100px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 8px;
-  display: inline-block;
-  margin: 13px 15px;
-  background-color: white;
-}
-/* line 28, sass/_module.scss */
-.dates ul li.date span.month {
-  display: block;
-}
-
-/* line 34, sass/_module.scss */
+/* line 26, sass/_module.scss */
 #banner {
   background-color: white;
   text-align: center;
   background-image: url("images/dot.png");
 }
-/* line 38, sass/_module.scss */
+/* line 30, sass/_module.scss */
 #banner img {
   height: 100%;
   opacity: .8;
@@ -374,9 +355,32 @@ p {
   -ms-transition-duration: 0.5s;
 }
 
-/* line 45, sass/_module.scss */
-.dates ul {
-  outline: black 1px solid;
+/* line 38, sass/_module.scss */
+.dates ul li.date {
+  border-bottom: 1px solid #323232;
+}
+/* line 40, sass/_module.scss */
+.dates ul li.date:not(:first-child) {
+  padding: 10px 0px 0px;
+}
+
+/* line 46, sass/_module.scss */
+#more {
+  text-align: center;
+}
+/* line 48, sass/_module.scss */
+#more ul.similar-events {
+  height: 100%;
+}
+/* line 50, sass/_module.scss */
+#more ul.similar-events li {
+  overflow: hidden;
+  height: 30%;
+}
+/* line 55, sass/_module.scss */
+#more ul.similar-events li img {
+  position: relative;
+  top: -20px;
 }
 
 /* line 2, sass/_state.scss */
@@ -404,8 +408,8 @@ p {
   -ms-transition-duration: 0.5s;
 }
 
-/* line 18, sass/_state.scss */
-.viewing-page-1 p.branding span.next, .viewing-page-2 p.branding span.next {
+/* line 17, sass/_state.scss */
+.viewing-page-1 p.branding, .viewing-page-2 p.branding {
   color: white;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
@@ -414,7 +418,7 @@ p {
   -ms-transition-duration: 0.5s;
 }
 
-/* line 25, sass/_state.scss */
+/* line 23, sass/_state.scss */
 .viewing-page-4 #more, .viewing-page-3 #more, .viewing-page-5 #more {
   display: block;
 }

@@ -15,10 +15,8 @@
 }
 .viewing-page-1, .viewing-page-2{
   p.branding{
-    span.next{
       color: white;
       @include transition-duration(.5s);
-    }
   }
 }
 .viewing-page-4,.viewing-page-3,.viewing-page-5{

@@ -9,25 +9,17 @@
 .information{
   div{
     padding-top: 30px;
-    background-image: url('images/marker.png');
+    /*
+background-image: url('images/marker.png');
     background-repeat: no-repeat;
     background-position: center top;
-    margin-bottom: 50px;
+*/
+    margin-bottom: 20px;
   }
 }
 .dates{
   ul{
     li.date{
-      height: 100px;
-      width: 100px;
-      @include box-sizing(border-box);
-      padding: 8px;
-      display: inline-block;
-      margin: 13px 15px;
-      background-color: white;
-      span.month{
-        display: block;
-      }
     }
   }
 }
@@ -43,6 +35,27 @@
 }
 .dates{
   ul{
-  outline: black 1px solid;
+    li.date{
+      border-bottom: 1px solid $black;
+      &:not(:first-child){
+      padding: 10px 0px 0px;
+      }
+    }
+  }
+}
+#more{
+  text-align: center;
+  ul.similar-events{
+    height: 100%;
+    li{
+      overflow: hidden;
+      height: 30%;
+      .info{
+      }
+      img{
+        position: relative;
+        top: -20px;
+      }
+    }
   }
 }
